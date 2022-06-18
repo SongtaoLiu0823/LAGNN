@@ -44,7 +44,7 @@ random.seed(args.seed)
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 args.cuda = torch.cuda.is_available()
 
-# Adapted from GRAND:https://arxiv.org/pdf/2005.11079.pdf
+# Adapted from GRAND: https://github.com/THUDM/GRAND
 def consis_loss(logps, temp=args.tem):
     ps = [torch.exp(p) for p in logps]
     sum_p = 0.
