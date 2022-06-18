@@ -71,7 +71,7 @@ class LAGAT(torch.nn.Module):
         x = self.conv2(x, edge_index)
         return x
 
-
+# Adapted from GRAND: https://github.com/THUDM/GRAND
 def consis_loss(logps, temp=args.tem):
     ps = [torch.exp(p) for p in logps]
     sum_p = 0.
