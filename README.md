@@ -18,8 +18,8 @@ bash semi.sh
 - To replicate the full-supervised results, run the following script
 ```sh
 cd OGB
-# Pretrain: Products
+# Pretrain Example: Products
 python cvae_generate_products.py --latent_size 10 --pretrain_lr 1e-5 --total_iterations 10000 --batch_size 8192
 # Train downstream GNNs
-bash 
+bash full.sh
 ```
