@@ -9,16 +9,16 @@ This repository contains an implementation of "Local Augmentation for Graph Neur
 - pyg 2.0.3
 
 ## Usage
-- To replicate the semi-supervised results, run the following script
+- For semi-supervised setting, run the following script
 ```sh
 cd Citation
 bash semi.sh
 ```
 
-- To replicate the full-supervised results, run the following script
+- For full-supervised setting, run the following script
 ```sh
 cd OGB
-# Pretrain Example: Products
+# If you want to pre-train the generative model, run the following command:
 python cvae_generate_products.py --latent_size 10 --pretrain_lr 1e-5 --total_iterations 10000 --batch_size 8192
 # Train downstream GNNs
 bash full.sh
