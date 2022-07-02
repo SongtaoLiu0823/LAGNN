@@ -26,7 +26,7 @@ bash full.sh
 
 ## Citation
 ```
-@inproceedings{liu2021local,
+@inproceedings{liu2022local,
   title={Local augmentation for graph neural networks},
   author={Liu, Songtao and Ying, Rex and Dong, Hanze and Li, Lanqing and Xu, Tingyang and Rong, Yu and Zhao, Peilin and Huang, Junzhou and Wu, Dinghao},
   booktitle={International Conference on Machine Learning},
