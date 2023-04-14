@@ -74,7 +74,7 @@ def generated_generator(args, device, adj, features, labels, features_normalized
     for _ in range(int(epochs / 2)):
         model.train()
         model_optimizer.zero_grad()
-        output = model(features_normalized)
+        output = model(features_normalized, adj_normalized)
         output = torch.log_softmax(output, dim=1)
         loss_train = F.nll_loss(output[idx_train], labels[idx_train])
         loss_train.backward()
