@@ -72,7 +72,7 @@ idx_train = torch.LongTensor(idx_train)
 # Pretrain
 best_augmented_features = None
 
-best_augmented_features, _ = cvae_pretrain.generated_features(args, device, adj, features, labels, features_normalized, adj_normalized, idx_train)
+best_augmented_features, _ = cvae_pretrain.generated_generator(args, device, adj, features, labels, features_normalized, adj_normalized, idx_train)
 best_augmented_features = cvae_pretrain.feature_tensor_normalize(best_augmented_features).detach()
 
 all_maxVal1Acc_Val2Acc = []
